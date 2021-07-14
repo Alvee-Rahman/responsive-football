@@ -1,0 +1,295 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body{
+    background-color: rgb(221, 210, 210);
+    font-family: 'Poppins', sans-serif;
+}
+/*......navbar design........
+............................../*/
+.navbar{
+    height: 100px;
+    background-color:maroon;
+    
+}
+.navbar button {
+    
+    background-color:black;
+    color: brown;
+    font-size: 50px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 1700px;
+
+}
+/*.....navbar end........*/
+
+ /*.....header part........
+ .........................*/
+
+.header-container{
+    background-color:maroon;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.header-part{
+
+   margin-left: 100px;
+   padding: 2px;
+   font-size: 40px;
+   color: white; 
+   
+   
+}
+.header-part img:hover,.header-part h1:hover{
+    color: sienna;
+    transform: rotate(45deg); 
+    transition: transform 1s linear ;
+    
+
+}
+.header-part button{
+    background-color:black;
+    color: brown;
+    font-size: 50px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.header-part img{
+
+    height: 500px;
+    width: 700px;
+
+     
+}
+/*..header part end........
+.........................*/
+
+/*-------main part start-----*/
+.container{
+    display: flex;
+    justify-content: center;
+}
+.players{
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 30px;
+    margin-top: 30px;
+    
+
+}
+.player-blog{
+    background-color: white;
+    width: 400px;
+    font-size: 30px;
+    padding: 40px;
+    margin: 30px;
+    border-radius: 10px;
+}
+.player-blog p{
+    font-size: 18px;
+    color: rgba(124, 116, 116, 0.808);
+}
+.player-blog img{
+    width: 400px;
+    height: 300px; 
+    border-radius: 10px;
+}
+
+/*-------main  frst part end-----*/
+/*-------main seconnd part start-----*/
+.second-container{
+    display: flex;
+    justify-content: center;
+}
+
+.main-part-two{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 100px;
+    
+    
+
+}
+.second-sub-part{
+   margin-left: 100px;
+   padding: 2px;
+   font-size: 40px;
+   color:black;
+   
+
+}
+.second-sub-part button{
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    color: brown;
+    background-color:black;
+    
+}
+
+.second-sub-part img{
+    height: 800px;
+    width: 500px;
+
+}
+/*-------main second part end-----*/
+/*--------main part end---------*/
+/*footer part start-------*/
+
+/*-------feedback part start-----*/
+.comment-container{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    padding: 30px;
+}
+.commentbox{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+.feedback, .feedback h1, .feedback input{
+    margin-right:40px;
+    font-size: 40px;
+    
+}
+.feedback button{
+    font-size: 40px;
+}
+/*-------feedback part end-----*/
+/*-------footer part start-----*/
+
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+ 
+}
+.footer-part-logo i{
+  
+    font-size: 50px;
+    padding: 70px;
+
+}
+.footer-part-logo p{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+/*------footer part end---------*/
+/*-------media quary-----*/
+/*-------for mobile-----*/
+
+@media only screen and (max-width: 668px) {
+    .navbar button{
+        font-size: 20px;
+      
+        border-radius: 10px;
+        margin-top: 20px;
+        margin-left: 300px;
+    }
+
+    .navbar button{
+        width: 50px;
+    }
+   
+    .header-container {
+        grid-template-columns: repeat(1, 1fr);
+
+        
+    }
+    .header-part{
+        font-size: 10px;
+        margin-left:  40px;
+        padding: 0;
+
+    }
+
+    .header-part button{
+        font-size: 10px;
+       
+        margin-left:  140px;
+        
+    }
+    .header-part img{
+        width: 400px;
+        height: 200px;
+        margin: 0;
+
+
+    } 
+    .players{
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+    .player-blog , .player-blog img{
+        width: 250px;
+
+    }
+    .main-part-two{
+        grid-template-columns: repeat(1,1fr);
+        
+
+    }
+    .second-sub-part , .second-sub-part img{
+        width: 300px;
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+
+    }
+    .comment-container{
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+        padding: 10px;
+    }
+    .commentbox{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+    .feedback, .feedback h1 ,.feedback input{
+        margin-right:20px;
+        font-size: 20px;
+        
+    }
+    .feedback button{
+        font-size: 20px;
+    }
+    .footer-container{
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+     
+    }
+   
+    .footer-container{
+        display: flex;
+        justify-content: center;
+        padding-top: 40px;
+     
+    }
+    .footer-part-logo img{
+      
+        width: 450px;
+    }
+    .footer-part-logo p{
+        display: flex;
+        justify-content: center;
+        font-size: 50px;
+    }
+    .footer-part-logo p{
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+    }
+
+
+}
