@@ -9,17 +9,18 @@ body{
 ............................../*/
 .navbar{
     height: 100px;
-    background-color:maroon;
+    background-color:rgb(57, 26, 172);
     
 }
 .navbar button {
     
     background-color:black;
     color: brown;
-    font-size: 50px;
+    font-size: 30px;
     border-radius: 10px;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-left: 1700px;
+    padding: 10px;
 
 }
 /*.....navbar end........*/
@@ -28,7 +29,7 @@ body{
  .........................*/
 
 .header-container{
-    background-color:maroon;
+    background-color:rgb(57, 26, 172);
     height: 600px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -37,33 +38,39 @@ body{
 
 .header-part{
 
-   margin-left: 100px;
+    margin-left: 60px;
    padding: 2px;
-   font-size: 40px;
+   font-size: 20px;
    color: white; 
    
    
 }
-.header-part img:hover,.header-part h1:hover{
-    color: sienna;
-    transform: rotate(45deg); 
-    transition: transform 1s linear ;
+.header-part h1:hover{
+    color: rgba(20, 236, 13, 0.918);
+    transform: scale(1.1) ;
+    transition: transform 1s ease-in-out;
     
-
 }
+
 .header-part button{
     background-color:black;
     color: brown;
-    font-size: 50px;
+    font-size: 30px;
     padding: 10px;
     border-radius: 10px;
+    margin-left: 250px;
 }
 .header-part img{
 
     height: 500px;
-    width: 700px;
+    width: 700px;   
+}
+.header-part img:hover{
+    
+    transform: rotateY(360deg);
+    transition: transform 3s ease-in-out;
 
-     
+    
 }
 /*..header part end........
 .........................*/
@@ -181,6 +188,7 @@ body{
     display: flex;
     justify-content: center;
     font-size: 50px;
+    transition: font-size 2s ease-in-out;
 }
 /*------footer part end---------*/
 /*-------media quary-----*/
